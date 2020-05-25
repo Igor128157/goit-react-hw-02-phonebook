@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
-// Components
+
 import ContactForm from './ContactsForm/ContactsForm';
 import ContactList from './ContactsList/ContactsList';
 import Filter from './Filter/Filter';
-// Utilities
+
 import { filterContacts } from '../utilities';
 
 export default class App extends Component {
@@ -16,6 +16,8 @@ export default class App extends Component {
     ],
     filter: '',
   };
+
+  
 
   addContact = contact => {
     const { contacts } = this.state;
